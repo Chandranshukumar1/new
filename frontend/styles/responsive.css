@@ -1,0 +1,266 @@
+/* responsive.css */
+
+/* Mobile-first responsive design */
+
+/* Default styles for all screen sizes */
+body {
+    font-size: 16px;
+  }
+  
+  /* Responsive typography */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Adjust layout for tablets */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Update styles for tablets */
+  }
+  
+  /* Adjust layout for small desktops */
+  @media (min-width: 1025px) and (max-width: 1366px) {
+    /* Update styles for small desktops */
+  }
+  
+  /* Adjust layout for larger desktops */
+  @media (min-width: 1367px) {
+    /* Update styles for larger desktops */
+  }
+  
+  /* Responsive layout */
+  
+  /* Flexbox grid for responsive columns */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+  
+  .col {
+    flex: 1;
+    padding: 0 15px;
+  }
+  
+  /* Media queries for column layout */
+  @media (max-width: 768px) {
+    .col {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* Responsive images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media queries for image size */
+  @media (max-width: 768px) {
+    img {
+      /* Adjust image size for mobile */
+    }
+  }
+  
+  /* Responsive navigation menu */
+  
+  /* Hamburger menu for mobile */
+  .menu-toggle {
+    display: none;
+  }
+  
+  /* Navigation styles */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav ul li {
+    margin-right: 20px;
+  }
+  
+  /* Media query for mobile navigation */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+    
+    .nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+    }
+    
+    .nav ul.active {
+      display: flex;
+    }
+    
+    .nav ul li {
+      margin: 0;
+      padding: 10px 20px;
+      border-bottom: 1px solid #555;
+    }
+  }
+  /* responsive.css - Continued */
+
+/* Responsive forms */
+
+/* Adjust form layout for smaller screens */
+@media (max-width: 768px) {
+    form {
+      /* Update form styles for mobile */
+    }
+  }
+  
+  /* Responsive buttons */
+  
+  /* Adjust button size for smaller screens */
+  @media (max-width: 768px) {
+    .button {
+      /* Update button styles for mobile */
+    }
+  }
+  
+  /* Responsive header */
+  
+  /* Adjust header layout for smaller screens */
+  @media (max-width: 768px) {
+    header {
+      /* Update header styles for mobile */
+    }
+  }
+  
+  /* Responsive footer */
+  
+  /* Adjust footer layout for smaller screens */
+  @media (max-width: 768px) {
+    footer {
+      /* Update footer styles for mobile */
+    }
+  }
+  
+  /* Responsive media content */
+  
+  /* Adjust video size for smaller screens */
+  @media (max-width: 768px) {
+    video {
+      /* Update video size for mobile */
+    }
+  }
+  
+  /* Adjust audio controls for smaller screens */
+  @media (max-width: 768px) {
+    audio {
+      /* Update audio controls for mobile */
+    }
+  }
+  
+  /* Responsive animations */
+  
+  /* Adjust animation duration for smaller screens */
+  @media (max-width: 768px) {
+    .animation {
+      /* Update animation duration for mobile */
+    }
+  }
+  
+  /* Responsive breakpoints */
+  
+  /* Define custom breakpoints for specific cases */
+  @media (min-width: 480px) and (max-width: 768px) {
+    /* Custom responsive styles for specific range */
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    /* Custom responsive styles for another range */
+  }
+  
+  /* Responsive utility classes */
+  
+  /* Mobile text alignment */
+  @media (max-width: 768px) {
+    .text-center-mobile {
+      text-align: center;
+    }
+  }
+  
+  /* Hide on mobile */
+  @media (max-width: 768px) {
+    .hide-mobile {
+      display: none;
+    }
+  }
+/* responsive.css - Continued */
+
+/* Responsive breakpoints for specific devices */
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Update styles for tablets */
+  }
+  
+  /* Small desktops */
+  @media (min-width: 1025px) and (max-width: 1366px) {
+    /* Update styles for small desktops */
+  }
+  
+  /* Large desktops */
+  @media (min-width: 1367px) {
+    /* Update styles for large desktops */
+  }
+  
+  /* Landscape orientation */
+  @media (orientation: landscape) {
+    /* Update styles for landscape orientation */
+  }
+  
+  /* Portrait orientation */
+  @media (orientation: portrait) {
+    /* Update styles for portrait orientation */
+  }
+  
+  /* Print styles */
+  
+  @media print {
+    /* Update styles for printing */
+  }
+  
+  /* Specific device orientations and resolutions */
+  
+  /* iPhone 6/7/8 */
+  @media (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+    /* Update styles for iPhone 6/7/8 */
+  }
+  
+  /* iPad */
+  @media (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) {
+    /* Update styles for iPad */
+  }
+  
+  /* Galaxy S5 */
+  @media (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+    /* Update styles for Galaxy S5 */
+  }
+  
+  /* Surface Pro */
+  @media (device-width: 1440px) and (device-height: 2160px) and (-webkit-device-pixel-ratio: 2) {
+    /* Update styles for Surface Pro */
+  }
+  
+  /* Smart TV */
+  @media (device-width: 1920px) and (device-height: 1080px) {
+    /* Update styles for Smart TV */
+  }
+    

@@ -1,0 +1,96 @@
+/* main.css */
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set default font and font size */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  /* Global styles for headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Global link styles */
+  a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Global button styles */
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  /* Global form input styles */
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Global layout container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Color scheme */
+  .primary-color {
+    color: #333;
+  }
+  
+  .secondary-color {
+    color: #888;
+  }
+  
+  .background-color {
+    background-color: #f4f4f4;
+  }
+  
+  /* Additional utility classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-bold {
+    font-weight: bold;
+  }
+  
+  /* Responsive media query */
+  @media (max-width: 768px) {
+    /* Define styles for mobile devices */
+    .container {
+      padding: 10px;
+    }
+  }
+  
